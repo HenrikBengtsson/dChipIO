@@ -1,9 +1,26 @@
-# R package: dChipIO
+# dChipIO: Methods for Reading dChip Files
 
-This package is not on CRAN.  Install in R as:
 
-```s
-source('http://aroma-project.org/R/install#HenrikBengtsson/dChipIO')
+## Installation
+R package dChipIO is only available via [GitHub](https://github.com/HenrikBengtsson/dChipIO) and can be installed in R as:
+```r
+source('http://callr.org/install#HenrikBengtsson/dChipIO')
 ```
 
-R CMD check status: <a href="https://travis-ci.org/HenrikBengtsson/dChipIO"><img src="https://travis-ci.org/HenrikBengtsson/dChipIO.svg?branch=master" alt="Build status"></a>
+### Pre-release version
+
+To install the pre-release version that is available in branch `develop`, use:
+```r
+source('http://callr.org/install#HenrikBengtsson/dChipIO@develop')
+```
+This will install the package from source.  
+
+
+
+## Software status
+
+| Resource:     | GitHub        | Travis CI     | Appveyor         |
+| ------------- | ------------------- | ------------- | ---------------- |
+| _Platforms:_  | _Multiple_          | _Linux_       | _Windows_        |
+| R CMD check   |  | <a href="https://travis-ci.org/HenrikBengtsson/dChipIO"><img src="https://travis-ci.org/HenrikBengtsson/dChipIO.svg" alt="Build status"></a> |  |
+| Test coverage |                     | <a href="https://coveralls.io/r/HenrikBengtsson/dChipIO"><img src="https://coveralls.io/repos/HenrikBengtsson/dChipIO/badge.svg?branch=develop" alt="Coverage Status"/></a>   |                  |
