@@ -1,4 +1,4 @@
-# CRAN submission dChipIO 0.1.3
+# CRAN submission dChipIO 0.1.4
 on 2016-01-12
 
 This is an old package that deserves better than being forgotten about
