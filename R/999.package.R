@@ -27,9 +27,9 @@
 #
 # \references{
 #   [1] The dChip software, \url{http://www.dchip.org/}\cr
-#   [2] Thread 'DCP File Format', dChip forum 'Welcome, Download \& Codes',
-#       2008. \url{http://dchip.forum5.com/viewtopic.php?p=812#812}
-#       [This old forum is no longer available / Jan 2016]\cr
+#   [2] Thread 'DCP File Format', 'dChip Software', Google Groups,
+#       December 2008.
+#       \url{https://groups.google.com/forum/#!topic/dchip-software/Q7mTJPPpZ5U} \cr
 #   [3] Affymetrix Inc, Fusion Software Developers Kit (SDK), 2008.
 #       \url{http://www.affymetrix.com/estore/partners_programs/programs/developer/fusion/index.affx?terms=no}
 # }
