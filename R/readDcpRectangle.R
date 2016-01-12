@@ -3,12 +3,12 @@
 #
 # @title "Reads a spatial subset of probe-level data from a dChip DCP file"
 #
-# @synopsis 
-# 
+# @synopsis
+#
 # \description{
 #   @get "title".
 # }
-# 
+#
 # \arguments{
 #   \item{filename}{The pathname of the DCP file.}
 #   \item{fields}{The cell fields to be read.}
@@ -17,11 +17,11 @@
 #   \item{yrange}{A @numeric @vector of length two giving the top
 #     and bottom coordinates of the cells to be returned.}
 #   \item{asMatrix}{If @TRUE, the CEL data fields are returned as
-#     matrices with element (1,1) corresponding to cell 
+#     matrices with element (1,1) corresponding to cell
 #     (xrange[1],yrange[1]).}
 #   \item{...}{Additional arguments passed to @see "readDcp".}
 # }
-# 
+#
 # \value{
 #   A named @list CEL structure similar to what @see "readDcp".
 #   In addition, if \code{asMatrix} is @TRUE, the CEL data fields
@@ -29,15 +29,15 @@
 # }
 #
 # @author
-# 
+#
 # @examples "../incl/readDcpRectangle.Rex"
-# 
+#
 # \seealso{
 #   The @see "readDcp" method is used internally.
-#   This method was inspired by @see "affxparser::readCelRectangle" of
-#   the \pkg{affxparser} package.
+#   This method was inspired by \code{readCelRectangle()} of the
+#   \pkg{affxparser} package.
 # }
-# 
+#
 # @keyword "file"
 # @keyword "IO"
 #*/#########################################################################
@@ -85,4 +85,4 @@ readDcpRectangle <- function(filename, fields=c("rawIntensities", "normalizedInt
 # HISTORY:
 # 2008-08-20
 # o Created from affxparser::readCelRectangle.R
-############################################################################  
+############################################################################
