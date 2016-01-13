@@ -1,5 +1,5 @@
 Package: dChipIO
-Version: 0.1.4-9000
+Version: 0.1.5
 Title: Methods for Reading dChip Files
 Depends: R (>= 2.6.0)
 Date: 2016-01-12
