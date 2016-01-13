@@ -217,7 +217,8 @@ readDcp <- function(con, fields=c("rawIntensities", "normalizedIntensities", "ca
       res[[field]] <- .readInt(raw[1:4,], n=n);
     }
   }
-  rm(raw);
+
+  raw <- NULL ## Not needed anymore
 
 # print(seek(con, read="r"));
 #print(file.info(pathname2)$size);

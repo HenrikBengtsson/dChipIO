@@ -116,7 +116,7 @@ readCdfBin <- function(con, units=NULL, ...) {
   }
   raw <- raw[-idxs,,drop=FALSE];
   data$unitNames <- unitNames;
-  rm(unitNames);
+  unitNames <- NULL ## Not needed anymore
 
   # Extract 'NumProbe'
   idxs <- 1:2;
@@ -129,7 +129,7 @@ readCdfBin <- function(con, units=NULL, ...) {
   # Sanity checks
   stopifnot(data$CellPos >= 0)
 
-  rm(raw);
+  raw <- NULL ## Not needed anymore
 
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
