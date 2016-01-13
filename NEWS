@@ -4,6 +4,8 @@ Package: dChipIO
 Version: 0.1.4-9000 [2016-01-12]
 o BUG FIX: The read functions did not work on Solaris, because they
   read data using the platform endian rather than little endian.
+o CLEANUP: Removed warning on readBin() and "'signed = FALSE' is
+  only valid for integers of sizes 1 and 2".
 
 
 Version: 0.1.4 [2016-01-12]

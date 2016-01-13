@@ -52,7 +52,7 @@ readDcp <- function(con, fields=c("rawIntensities", "normalizedIntensities", "ca
         size <- 1;
       }
 #print(list(what=what, size=size, signed=signed, n=n));
-      readBin(con, what=what, size=size, signed=signed, n=n);
+      readBin(con, what=what, size=size, signed=signed, n=n, endian="little")
     } # readBin2()
 
 
