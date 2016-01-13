@@ -118,7 +118,7 @@ readCdfBin <- function(con, units=NULL, ...) {
 
   # Extract 'NumProbe'
   idxs <- 1:2;
-  data$numProbes <- .readShort(raw[idxs,,drop=FALSE], n=nbrOfUnits)
+  data$numProbes <- .readUShort(raw[idxs,,drop=FALSE], n=nbrOfUnits)
   raw <- raw[-idxs,,drop=FALSE];
 
   data$CellPos <- .readInt(raw, n=nbrOfUnits)

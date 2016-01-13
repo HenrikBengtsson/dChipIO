@@ -15,7 +15,7 @@
   readBin(con, what="integer", n=n, size=1L, signed=FALSE)
 }
 
-.readShort <- function(con, n=1L, ...) {
+.readUShort <- function(con, n=1L, ...) {
   readBin(con, what="integer", n=n, size=2L, signed=FALSE, endian="little")
 }
 
