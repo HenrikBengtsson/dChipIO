@@ -72,6 +72,10 @@ readCdfBinHeader <- function(con, ...) {
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   hdr$dummy <- NULL;
 
+  # Sanity checks
+  stopifnot(all(hdr$CellDim >= 0))
+  stopifnot(all(hdr$NumUnit >= 0))
+
   hdr;
 } # readCdfBinHeader()
 

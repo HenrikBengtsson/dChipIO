@@ -96,6 +96,9 @@ readDcpHeader <- function(con, ...) {
   hdr$DatFile <- hdr$DatFile
   hdr$BaselineFile <- hdr$BaselineFile
 
+  # Sanity checks
+  stopifnot(hdr$CellDim >= 0)
+
   hdr;
 } # readDcpHeader()
 

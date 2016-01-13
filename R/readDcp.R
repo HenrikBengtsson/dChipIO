@@ -132,6 +132,8 @@ readDcp <- function(con, fields=c("rawIntensities", "normalizedIntensities", "ca
   res <- list();
   res$header <- readDcpHeader(con=con);
   nbrOfCells <- res$header$CellDim^2;
+  # Sanity checks
+  stopifnot(nbrOfCells >= 0)
 
   # Argument '.nbrOfUnits':
   if (is.null(.nbrOfUnits)) {

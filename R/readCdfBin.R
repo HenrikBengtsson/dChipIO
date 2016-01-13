@@ -63,6 +63,8 @@ readCdfBin <- function(con, units=NULL, ...) {
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   hdr <- readCdfBinHeader(con=con);
   nbrOfUnits <- hdr$NumUnit;
+  # Sanity checks
+  stopifnot(nbrOfUnits >= 0)
 
   # Arguments 'units':
   if (is.null(units)) {
@@ -120,8 +122,13 @@ readCdfBin <- function(con, units=NULL, ...) {
   idxs <- 1:2;
   data$numProbes <- .readUShort(raw[idxs,,drop=FALSE], n=nbrOfUnits)
   raw <- raw[-idxs,,drop=FALSE];
+  # Sanity checks
+  stopifnot(data$numProbes >= 0)
 
   data$CellPos <- .readInt(raw, n=nbrOfUnits)
+  # Sanity checks
+  stopifnot(data$CellPos >= 0)
+
   rm(raw);
 
 
